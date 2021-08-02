@@ -50,3 +50,34 @@ let question = {
     return options === question.options[question.correctAnswerIndex];
   },
 };
+// Using function to create object
+
+function createQues1(title, options, correctAnswerIndex) {
+  let ques = {};
+  ques.title = title;
+  ques.options = options;
+  ques.correctAnswerIndex = correctAnswerIndex;
+  ques.isAnswerCorrect = function (index) {
+    return index === ques.correctAnswerIndex;
+  };
+  ques.getCorrectAnswer = function () {
+    return ques.options[correctAnswerIndex];
+  };
+  return ques;
+}
+
+// Using 'this' keyword
+
+function createQues2(title, options, correctAnswerIndex) {
+  let ques = {};
+  ques.title = title;
+  ques.options = options;
+  ques.correctAnswerIndex = correctAnswerIndex;
+  ques.isAnswerCorrect = function (index) {
+    return index === this.correctAnswerIndex;
+  };
+  ques.getCorrectAnswer = function () {
+    return this.options[correctAnswerIndex];
+  };
+  return ques;
+}
