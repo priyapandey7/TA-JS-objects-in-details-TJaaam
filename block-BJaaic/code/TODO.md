@@ -33,6 +33,10 @@ Methods:
 - `changeColor(newColor)` - accepts the new color and updates the color of the dog
 - `summary()` - returns `I am ${name} and I am of ${color} color. I can also bark`
 
+```js
+
+```
+
 #### Cat
 
 It will have all the properties and methods of the Animal. These are the extra properties and methods these dogs will have.
