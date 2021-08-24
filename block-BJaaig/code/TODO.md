@@ -31,8 +31,8 @@
 
 // console.log(user.sayHello()); // output /Hello John
 // console.log(user2.sayHello()); // output / error/Hello Arya
-// console.log(user.sayHello.call(user2)); // output / error //Hello Arya
-// console.log(user.sayHello.call(user2, 'Hey')); // output / error//Hey Arya
+// console.log(user.sayHello.call(user2)); // output //Hello Arya
+// console.log(user.sayHello.call(user2, 'Hey')); // output //Hey Arya
 // console.log(user.sayHello.apply(user2, ['Hey'])); // output / error //Hey Arya
 // console.log(typeof user.sayHello.bind(user2)); // output / function
 // console.log(user.sayHello.bind(user2)()); // output / Hello Arya
