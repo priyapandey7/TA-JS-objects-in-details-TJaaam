@@ -117,16 +117,33 @@ class PersonClass {
 
 // /********* Uncomment this line to test your work! *********/
 var george = new PersonClass();
-// george.greet(); // -> Logs 'hello'
+george.greet(); // -> Logs 'hello'
+
+// #### Challenge 2/2
+
+// Create a class `DeveloperClass` that creates objects by extending the `PersonClass` class. In addition to having a `name` property and `greet` method, `DeveloperClass` should have an `introduce` method. When called, `introduce` should log the string 'Hello World, my name is [name]'.
+
+class DeveloperClass extends PersonClass {
+  constructor(name) {
+    super(name);
+  }
+
+  introduce() {
+    console.log(`'Hello World, my name is ${this.name}`);
+  }
+}
+// /********* Uncomment these lines to test your work! *********/
+var thai = new DeveloperClass("Thai", 32);
+console.log(thai.name); // -> Logs 'Thai'
+thai.introduce(); //-> Logs 'Hello World, my name is Thai'
 
 /*** CHALLENGE 2 of 3 ***/
 
-// add code here
-
-// /********* Uncomment these lines to test your work! *********/
-// var thai = new DeveloperClass('Thai', 32);
-// console.log(thai.name); // -> Logs 'Thai'
-// thai.introduce(); //-> Logs 'Hello World, my name is Thai'
+// add code here block-BJaaig
+// class personFromConstructor {
+//   constructor(name,age)
+//   super(name,age)
+// }
 
 /****************************************************************
                       EXTENSION: SUBCLASSING
@@ -146,16 +163,24 @@ function userFactory(name, score) {
   return user;
 }
 
-var adminFunctionStore /* Put code here */;
+var adminFunctionStore = Object.create(userFunctionStore);
 
 function adminFactory(name, score) {
-  // Put code here
+  let obj = adminFactory(name, score);
+  Object.setPrototypeOf(obj, adminFromFactory);
+  obj.type = "admin";
+  return obj;
 }
 
 /* Put code here for a method called sharePublicMessage*/
+// Create a method called `sharePublicMessage` that logs 'Welcome users!' and will be available to `adminFactory` objects, but not `userFactory` objects. Do not add this method directly in the `adminFactory` function.
+
+adminFunctionStore.sharePublicMessage = function () {
+  console.log(`welcome user`);
+};
 
 var adminFromFactory = adminFactory("Eva", 5);
 
 // /********* Uncomment these lines to test your work! *********/
-// adminFromFactory.sayType() // -> Logs "I am a Admin"
-// adminFromFactory.sharePublicMessage() // -> Logs "Welcome users!"
+adminFromFactory.sayType(); // -> Logs "I am a Admin"
+adminFromFactory.sharePublicMessage(); // -> Logs "Welcome users!"
