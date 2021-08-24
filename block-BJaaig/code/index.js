@@ -2,7 +2,7 @@ let user = {
   username: "John",
   sayHello(message = "Hello") {
     console.log(message + " " + this.username);
-  },9 
+  },
 };
 
 let user2 = {
