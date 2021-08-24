@@ -1,56 +1,56 @@
-# Inheritance
+// # Inheritance
 
-Convert the below requirements into inheritance using:
+// Convert the below requirements into inheritance using:
 
-- Pseudoclassical Pattern
-- Class Pattern
+// - Pseudoclassical Pattern
+// - Class Pattern
 
-#### Animal
+// #### Animal
 
-Properties:
+// Properties:
 
-- `location`
-- `numberOfLegs`
+// - `location`
+// - `numberOfLegs`
 
-Methods
+// Methods
 
-- `eat()` - log a message saying `I live in ${location} and I can eat`
+// - `eat()` - log a message saying `I live in ${location} and I can eat`
 
-- `changeLocation(newLocation)` - accepts location and updates the location of the animal
+// - `changeLocation(newLocation)` - accepts location and updates the location of the animal
 
-- `summary()` - returns `I live in ${location} and I have ${numberOfLegs}`
+// - `summary()` - returns `I live in ${location} and I have ${numberOfLegs}`
 
-#### Dog
+// #### Dog
 
-It will have all the properties and methods of the Animal. These are the extra properties and methods these dogs will have.
+// It will have all the properties and methods of the Animal. These are the extra properties and methods these dogs will have.
 
-Properties:
+// Properties:
 
-- `name`
-- `color`
+// - `name`
+// - `color`
 
-Methods:
+// Methods:
 
-- `bark()` - alerts a message saying `I am ${name} and I can bark 🐶`
-- `changeName(newName)` - accepts the name property and updates the name of the dog
-- `changeColor(newColor)` - accepts the new color and updates the color of the dog
-- `summary()` - returns `I am ${name} and I am of ${color} color. I can also bark`
+// - `bark()` - alerts a message saying `I am ${name} and I can bark 🐶`
+// - `changeName(newName)` - accepts the name property and updates the name of the dog
+// - `changeColor(newColor)` - accepts the new color and updates the color of the dog
+// - `summary()` - returns `I am ${name} and I am of ${color} color. I can also bark`
 
-#### Cat
+// #### Cat
 
-It will have all the properties and methods of the Animal. These are the extra properties and methods these dogs will have.
+// It will have all the properties and methods of the Animal. These are the extra properties and methods these dogs will have.
 
-Properties:
+// Properties:
 
-- `name`
-- `colorOfEyes`
+// - `name`
+// - `colorOfEyes`
 
-Methods:
+// Methods:
 
-- `meow()` - alerts a message saying `I am ${name} and I can do mewo meow 😹`
+// - `meow()` - alerts a message saying `I am ${name} and I can do mewo meow 😹`
 
-- `changeName(newName)` - accepts the name property and updates the name of the dog
+// - `changeName(newName)` - accepts the name property and updates the name of the dog
 
-- `changeColorOfEyes(newColor)` - accepts the new color and updates the color of the dog
+// - `changeColorOfEyes(newColor)` - accepts the new color and updates the color of the dog
 
-- `summary()` - returns `I am ${name} and the color of my eyes are ${colorOfEyes}. I can also do meow meow`
+// - `summary()` - returns `I am ${name} and the color of my eyes are ${colorOfEyes}. I can also do meow meow`
