@@ -2,7 +2,7 @@ let user = {
   username: "John",
   sayHello(message = "Hello") {
     console.log(message + " " + this.username);
-  },
+  },9 
 };
 
 let user2 = {
@@ -23,3 +23,23 @@ function MainUser() {
 }
 
 let userSayHello = user.sayHello;
+console.log(user.sayHello()); // output /Hello John
+console.log(user2.sayHello()); // output / error/Hello Arya
+console.log(user.sayHello.call(user2)); // output //Hello Arya
+console.log(user.sayHello.call(user2, "Hey")); // output //Hey Arya
+console.log(user.sayHello.apply(user2, ["Hey"])); // output / error //Hey Arya
+console.log(typeof user.sayHello.bind(user2)); // output / function
+console.log(user.sayHello.bind(user2)()); // output / Hello Arya
+console.log(userSayHello()); // output /Hello undefined
+console.log(typeof userSayHello.bind(user2)); // output / function
+console.log(userSayHello.bind(user2)()); // output / Hello Arya
+console.log(user3.sayHello()); // output / error sayHello is not a function
+console.log(userSayHello.apply(user3)); // output / Hello Bran
+console.log(userSayHello.call(user3)); // output / Hello Bran
+console.log(typeof new MainUser()); // output / object
+console.log(typeof new MainUser()); // output / object
+console.log(new MainUser().sayHello()); // output / Hello Tyrion
+console.log(new MainUser().sayHello.call(user2)); // output / Hello Arya
+console.log(new MainUser().sayHello.call(user)); // output / Hello John
+console.log(new MainUser().sayHello.apply(user, ["Welcome!"])); // output /Welcome! John
+// ```
