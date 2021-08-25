@@ -8,6 +8,7 @@ class Book {
   }
   markedbookAsRead() {
     this.isRead = true;
+    this.finishedDate = Date.now();
   }
 }
 class BookList {
@@ -42,3 +43,6 @@ let book2 = new Book(
 let book3 = new Book("“Lessons Life Taught Me Unknowingly”.,ff,Anupam Kher");
 let book4 = new Book("My Journey,ff,Dr. A.P.J. Abdul Kalamf");
 let book5 = new Book("The Goat Thief,ff,Perumal Murugan");
+
+let library = new BookList();
+library.add([book1, book2, book3, book4, book5]);
