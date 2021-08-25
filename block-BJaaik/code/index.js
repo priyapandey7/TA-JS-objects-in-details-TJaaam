@@ -45,6 +45,7 @@ class Artist extends Person {
     console.log(`${this.name} can art`);
   }
 }
+
 // cricketer
 class Cricketer extends Player {
   constructor(name, age, gender, sportsName, teamName) {
