@@ -107,7 +107,14 @@ console.log(strings.unique()); // ['h', 'e', 'l', 'o', 'w', 'r', 'd']
 array that will contain only element that is common in both the array.
 */
 
-// You code goes here
+Array.prototype.intersection = function (Array) {
+  return this.reduce((acc, current) => {
+    if (Array.includes(current)) {
+      acc.push(current);
+    }
+    return acc;
+  }, []);
+};
 
 // Test to check the shuffle method (It will return different output every time you call)
 console.log(num.intersection([2, 7, 11, 32])); // [2, 7]
@@ -119,7 +126,16 @@ and split the array into groups the length of size. If array can't be split even
 chunk will be the remaining elements. `length` should default to 1.
 */
 
-// You code goes here
+Array.prototype.chunk = function (size = 1) {
+  let arr = [...this];
+  let len = math.floor(arr.length / size);
+  let final = [];
+  for (let i = 0; i <= len; i++) {
+    let chunk = arr.splice(0, size);
+    final.push(chunk);
+  }
+  return final.filter((Element) => element.length);
+};
 
 // Test to check the shuffle method (It will return different output every time you call)
 console.log(num.chunk(2)); // [[1, 2], [3, 4], [2, 3], [6, 7], [7]]
