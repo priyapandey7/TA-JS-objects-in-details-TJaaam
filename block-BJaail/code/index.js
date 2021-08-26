@@ -72,3 +72,21 @@ class Book {
     return li;
   }
 }
+
+let library = new BookList(bookList);
+
+library.add(
+  "When Breath Becomes Air",
+  "Paul Kalanithi",
+  "https://images3.penguinrandomhouse.com/cover/9780812988406"
+);
+library.add(
+  "The Adventures of Tom Sawyer",
+  "Mark Twain",
+  "https://images1.penguinrandomhouse.com/cover/9780143107330"
+);
+library.add(
+  "The Adventures of Tom Sawyer",
+  "Mark Twain",
+  "https://images1.penguinrandomhouse.com/cover/9780143107330"
+);
