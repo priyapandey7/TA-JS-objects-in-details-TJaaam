@@ -1,0 +1,216 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+}
+/* @import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600); */
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+body {
+  font-size: 20px;
+  font-family: "Work Sans", sans-serif;
+  color: #333;
+  font-weight: 300;
+  text-align: center;
+  background-color: #f8f6f0;
+}
+grid {
+  width: 600px;
+  height: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 10px 50px 50px 50px;
+  border: 2px solid #cbcbcb;
+}
+
+.grid h1 {
+  font-family: "sans-serif";
+  background-color: #01bbff;
+  font-size: 60px;
+  text-align: center;
+  color: #ffffff;
+  padding: 2px 0px;
+}
+
+#score {
+  color: #01bbff;
+  text-align: center;
+  font-size: 30px;
+}
+
+.grid #question {
+  font-family: "monospace";
+  font-size: 30px;
+  color: #01bbff;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+#btn0,
+#btn1,
+#btn2,
+#btn3 {
+  background-color: #01bbff;
+  width: 250px;
+  font-size: 20px;
+  color: #fff;
+  border: 1px solid #1d3c6a;
+  margin: 10px 40px 10px 0px;
+  padding: 10px 10px;
+}
+
+#btn0:hover,
+#btn1:hover,
+#btn2:hover,
+#btn3:hover {
+  cursor: pointer;
+  background-color: #01bbff;
+}
+
+#btn0:focus,
+#btn1:focus,
+#btn2:focus,
+#btn3:focus {
+  outline: 0;
+}
+
+#progress {
+  color: #2b2b2b;
+  font-size: 18px;
+}
